@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+            <div class="container"><a class="navbar-brand" href="{{url_for('login')}}" style="color: #F08080;">Equipment Management System</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1"></div>
+    </div>
+    </nav>
+    </div>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Welcome {{name}} &nbsp;</h2>
+                <p class="text-center">This is your homepage</p>
+                <br/>
+                <br/>
+                <a href="http://127.0.0.1:5000/profile"><input type="submit" value="Add Profile" class="btn btn-success"></a>
+
+                <a href="http://127.0.0.1:5000/put"><input type="submit" value="Add your Details" class="btn btn-success"></a>
+
+                <a href="http://127.0.0.1:5000/display"><input type="submit" value="Details" class="btn btn-success"></a>
+                <br/>
+                <br/>
+                 <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3KTU0cjmuWrtWaRm4wdTCkzqA0-DAsQSdw&usqp=CAU" data-lightbox="photos"><img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3KTU0cjmuWrtWaRm4wdTCkzqA0-DAsQSdw&usqp=CAU"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://img.etimg.com/thumb/width-1200,height-900,imgsize-383051,resizemode-1,msid-70672514/small-biz/productline/building-materials/road-construction-machines-brief-history-of-roadways-and-types-of-equipment-used-in-modern-day-road-construction.jpgg" data-lightbox="photos"><img class="img-fluid" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-383051,resizemode-1,msid-70672514/small-biz/productline/building-materials/road-construction-machines-brief-history-of-roadways-and-types-of-equipment-used-in-modern-day-road-construction.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.bullindia.com/images/products/ind-compact-equipment.png" data-lightbox="photos"><img class="img-fluid" src="https://www.bullindia.com/images/products/ind-compact-equipment.png"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.tcd.ie/mecheng/workshop/img/hurco_vm2.jpg" data-lightbox="photos"><img class="img-fluid" src="https://www.tcd.ie/mecheng/workshop/img/hurco_vm2.jpg"></a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<html>
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible", content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="static/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS -->
+  <link href="static/demo/demo.css" rel="stylesheet" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,input{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.panels.container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.panel{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index:7;
+}
+button {
+    width: 150px;
+    height: 49px;
+    border:none;
+    border-radius: 48px;
+    background-color: #F08080;
+    color:whitesmoke;
+    text-transform: uppercase;
+    font-weight:600;
+    margin:10px 0;
+    cursor: pointer;
+}
+button.hover{
+    background-color: #00bfa6;
+    cursor: pointer;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+a {
+  color: dodgerblue;
+}
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius:25px;
+}
+#id1
+{
+	margin:5px auto;
+	border: solid 5px #00bfa6;
+    width: 35%;
+	text-align: center;
+	background-color:white;
+	position: center;
+	border-radius: 30px;
+}
+.container {
+  padding: 30px;
+	align-items: center;
+	justify-content: center;
+}
+.span{
+    text-align: center;
+    line-height:80px;
+    color: #acacac;
+    font-size: 1.5rem;
+    float: right;
+    margin-left: 340px;
+    position: relative;
+    display:grid;
+    z-index: 2;
+}
+.input-field
+{
+    max-width: 380px;
+    height:55px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.1rem;
+    position: relative;
+}
+.input-field input{
+  width: 80%;
+  height: 45px;
+  background:none;
+  outline: none;
+  border: none;
+  color: black;
+  border-radius: 15px;
+  font-size: 1.5rem;
+
+}
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.5rem;
+}
+</style>
+</head>
+<body>
+    <br>
+    <br>
+<div id="id1">
+    <form method="post" action="/upload"  enctype="multipart/form-data">
+        <div class="container">
+            <h1>Equipment Management System</h1>
+            <hr/>
+          <input type="file" name="file" value="file">
+      <input type="submit" name="upload" value="Upload" class="btn btn-success">
+        </div>
+    </form>
+      {{msg}}
+            <br/>
+            <a href="http://127.0.0.1:5000/home"><input type="submit" value="Return back" class="btn btn-danger"></a>
+    <br/>
+    <br/>
+</div>
+</body>
+</html>
