@@ -4,16 +4,16 @@ import rds_db as db
 import pymysql
 app = Flask(__name__)
 dynamodb = boto3.resource('dynamodb',
-                          aws_access_key_id='AKIAWUH3IZV7U2OMKTX2',
-                          aws_secret_access_key='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',
+                          aws_access_key_id='XXXX',
+                          aws_secret_access_key='XXXX',
                           )
 from boto3.dynamodb.conditions import Key, Attr
 from werkzeug.utils import secure_filename
 s3 = boto3.client('s3',
-                  # aws_access_key_id='AKIAY4GH74X5WFIXGW66',
-                  aws_access_key_id='AKIAWUH3IZV7U2OMKTX2',
-                  # aws_secret_access_key='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',
-                  aws_secret_access_key='JvxK4EtVapNXKb0YTK2+oEZmQh2yB5TE7nvTU/Nc',
+                  # aws_access_key_id='XXXXX',
+                  aws_access_key_id='XXXXX',
+                  # aws_secret_access_key='XXXXX',
+                  aws_secret_access_key='XXXXc',
                   )
 BUCKET_NAME = 'upload-s3-bucket-direct'
 @app.route('/')
@@ -75,11 +75,11 @@ def upload():
             msg = "Upload Done ! "
     return render_template("upload.html", msg=msg)
 conn = pymysql.connect(
-        host= 'database-2.c5hfofmrcriz.us-east-2.rds.amazonaws.com',
+        host= 'Endpoint of rds',
         port = 3306,
-        user = 'root',
-        password = 'admin12345',
-        db = 'mydb'
+        user = 'user of RDS',
+        password = 'Password of RDS',
+        db = 'Database name'
         )
 @app.route('/put')
 def put():
