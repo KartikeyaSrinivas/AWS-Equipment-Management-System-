@@ -1,10 +1,10 @@
 import pymysql
 conn = pymysql.connect(
-        host= 'database-2.c2gawlby2uqr.us-east-2.rds.amazonaws.com',
+        host= '',
         port = 3306,
-        user = 'admin',
-        password = 'admin123',
-        db = 'mydb'
+        user = '',
+        password = '',
+        db = ''
         )
 def insert_details(name,email,comment,gender):
     cur=conn.cursor()
